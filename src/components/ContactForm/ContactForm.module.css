@@ -10,7 +10,8 @@
 .form {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 8px rgb(135, 203, 225);
+    /* box-shadow: 0 0 8px rgb(135, 203, 225); */
+    box-shadow: 10px 4px 4px rgb(87, 86, 86);
     padding: 20px;
     border: 1px solid #2e2d2d;
     width: 500px;

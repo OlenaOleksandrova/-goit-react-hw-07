@@ -62,6 +62,13 @@
     font-size: 20px;
 }
 .input{
-    height: 30px;
     font-size: 20px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+}
+.input:focus{
+    background-color: aliceblue;
+}
+.input:hover{
+    border-color: #28aaf1;
 }

@@ -35,10 +35,11 @@
     font-weight: 700;
 }
 .buttonForm:focus{
-    background-color: aquamarine;
+    background-color: rgb(33, 94, 106);
+    color: white;
 }
 .buttonForm:hover {
-    background-color: rgb(130, 219, 233);
+    background-color: rgb(150, 205, 248);
 }
 
 .label {

@@ -17,9 +17,16 @@ margin-bottom: 8px;
     width: 400px;
     padding: 0 20px;
     margin-bottom: 10px;
-    border: 1px solid #141414;
+    border: 1px solid #0b0b0b;
     box-shadow: 4px 4px 8px rgb(67, 68, 68);
     height: 30px;
     font-size: 20px;
 
+}
+.input:hover {
+    border: 1px solid #32aff3;
+}
+.input:focus {
+    background-color: #d8e4f1;
+    
 }

@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectFilteredContactsMemo} from "../../redux/contactsSlice";
+import { selectFilteredContactsMemo } from "../../redux/contactsSlice";
 import { selectFilter } from "../../redux/filtersSlice";
 import Contact from "../Contact/Contact";
 import s from "./ContactList.module.css";
@@ -8,7 +8,7 @@ import { fetchContacts } from "../../redux/contactsOps";
 
 const ContactList = () => {
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
@@ -17,11 +17,11 @@ const ContactList = () => {
   // const contacts = useSelector(state => state.contacts.items)
   const filter = useSelector(selectFilter);
   // const filter = useSelector(state => state.contacts.filter)
-  
 
-  const filteredContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(filter.toLowerCase())
-  );
+
+  // const filteredContacts = contacts.filter(contact =>
+  //   contact.name.toLowerCase().includes(filter.toLowerCase())
+  // );
 
   return (
     <ul className={s.list}>

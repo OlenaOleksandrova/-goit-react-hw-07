@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectFilteredContactsMemo } from "../../redux/contactsSlice";
-import { selectFilter } from "../../redux/filtersSlice";
+// import { selectFilter } from "../../redux/filtersSlice";
 import Contact from "../Contact/Contact";
 import s from "./ContactList.module.css";
 import { useEffect } from "react";
@@ -13,9 +13,9 @@ const ContactList = () => {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-  const contacts = useSelector(selectFilteredContactsMemo);
+  const filteredContacts = useSelector(selectFilteredContactsMemo);
   // const contacts = useSelector(state => state.contacts.items)
-  const filter = useSelector(selectFilter);
+  // const filter = useSelector(selectFilter);
   // const filter = useSelector(state => state.contacts.filter)
 
 
